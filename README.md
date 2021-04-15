@@ -1,4 +1,4 @@
-Xserv Ag coding exercise
+Xserv AG coding exercise
 ------
 
 Its always exciting the first time you try learning a new skill. Especially coding. 
