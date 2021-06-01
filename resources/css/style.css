@@ -11,6 +11,8 @@ version history: [1.0]
 body { 
   font-size: 20px; 
   font-family: 'Lato', 'Arial', sans-serif;
+  color: #555;
+  font-weight: 100;
 }
 
 /* STYLE OF THE HEADINGS */
@@ -22,8 +24,12 @@ h1 {
 } 
 
 h2 { 
+  color: #555;
   font-size: 2em; 
+  font-weight: 100;
   font-family: 'Lato', 'Arial', sans-serif;
+  text-align: center;
+  margin: 50px 0 0 0;
 }
 
 /* STYLE OF LINKS */
@@ -31,6 +37,14 @@ a {
   font-size: 1em; 
   font-family: 'Lato', 'Arial', sans-serif;
 }
+
+.food-delivery-subheading {
+  text-align: center;
+  width: 60%; 
+  margin: 0 auto;
+}
+
+/* HEADER SECTION */
 
 /* STYLING OF THE HEADER SECTION */
 header {
@@ -46,7 +60,7 @@ header {
 /* ROW1 STYLING */
 .row1 {
   white-space: nowrap;
-  width: 75%;
+  width: 60%;
   margin: auto;
   /*position: fixed; nowrap;*/
 }
@@ -67,7 +81,7 @@ header {
   display:inline-block;
   position: absolute;
   top: 50px;
-  right: 12.5%;
+  right: 20%;
 }
 
 .topnav a {
@@ -95,7 +109,7 @@ header {
 
 /* ROW2 STYLING */
 .row2 {
-  width: 75%;
+  width: 60%;
   margin: auto;
   margin-top: 100px;
   /*position: absolute;*/
@@ -206,5 +220,61 @@ header {
   }
   .topnav a:hover {
     color:white;
+  }
+}
+
+/* FOOD DELIVERY SECTION */
+
+#food-delivery {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.food-delivery-subheading {
+  width: 70%;
+}
+
+#box-container {
+  display: flex;
+  height: 500px;
+  margin-top: 50px;
+}
+
+#box1 {
+  width: 25%;
+  padding: 10px;
+}
+
+#box2 {
+  width: 25%;
+  padding: 10px;
+}
+#box3 {
+  width: 25%;
+  padding: 10px;
+}
+#box4 {
+  width: 25%;
+  padding: 10px;
+}
+
+/* MEDIA QUERIES FOR MOBILE DESIGN */
+@media screen and (max-width: 600px) {
+  #food-delivery {
+    width: 90%;
+  }
+
+  .food-delivery-subheading {
+    width: 90%; 
+  }
+    
+  #box-container {
+    display: block;
+  }
+  #box1, #box2, #box3, #box4 {
+    width: 100%;
+  }
+  h2 {
+    font-size: 25px;
   }
 }
