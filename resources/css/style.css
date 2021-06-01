@@ -8,3 +8,203 @@ email:     [etleva.kuci@xserv.ag]
 website:   [xserv.ag] 
 version history: [1.0] 
 */
+body { 
+  font-size: 20px; 
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+/* STYLE OF THE HEADINGS */
+h1 { 
+  font-size: 3em; 
+  color: white;
+  font-weight: 100;
+  font-family: 'Lato', 'Arial', sans-serif;
+} 
+
+h2 { 
+  font-size: 2em; 
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+/* STYLE OF LINKS */
+a { 
+  font-size: 1em; 
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+/* STYLING OF THE HEADER SECTION */
+header {
+  background-color: black;
+  width: 100%;
+  height: 700px;
+  background-image: url(http://localhost/pago/resources/img/hero_opacity.png);
+  background-position: center -200px;
+  background-size: cover;
+}
+
+
+/* ROW1 STYLING */
+.row1 {
+  white-space: nowrap;
+  width: 75%;
+  margin: auto;
+  /*position: fixed; nowrap;*/
+}
+
+.logo {
+ display:inline-block;
+ background-image: url(http://localhost/pago/resources/img/logo-white.png);
+ width: 150px; 
+ height: 150px;
+ background-position: center;
+ background-size: cover;
+ top: 20px;
+ position: relative;
+}
+
+.topnav {
+  overflow: hidden;
+  display:inline-block;
+  position: absolute;
+  top: 50px;
+  right: 12.5%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #e67e22;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+/* ROW2 STYLING */
+.row2 {
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+  /*position: absolute;*/
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.imhungry_btn {
+  background-color: #e67e22;
+  border: none;
+  border-radius:45px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.showmemore_btn {
+  background-color: transparent;
+  border: 1px solid #e67e22;
+  border-radius:45px;
+  color: #e67e22;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+
+
+
+/* MEDIA QUERIES FOR MOBILE DESIGN */
+@media screen and (max-width: 600px) {
+  .topnav {
+    right: 5%;
+    top: 60px;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a:not(:last-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    font-size: 40px;
+    right: 20px;
+    /*position: fixed;*/
+  }
+  .topnav.responsive {
+    right:10px;
+    /*position: relative;*/
+    width: 225px;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .row1 {
+    width: 90%;
+  }
+
+  .logo {
+    background-image: url(http://localhost/pago/resources/img/logo-white.png);
+    width: 100px; 
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    top: 20px;
+    position: relative;
+  }
+
+  .row2 {
+    width: 90%;
+    /*margin-top: 70px;*/
+    /* position: absolute; */
+  	}
+  h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Lato', 'Arial', sans-serif;
+  }
+  header {
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    background-image: url(http://localhost/pago/resources/img/hero_opacity.png);
+    background-position: center 0px;
+    background-size: cover;
+  }
+  .logo {
+    margin: 20px 0 0 10px;
+  }
+  .topnav a:hover {
+    color:white;
+  }
+}
