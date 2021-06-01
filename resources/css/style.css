@@ -289,7 +289,7 @@ header {
 #gallery-line2 {
   display: flex;
   height: 250px;
-
+  margin-bottom: -50px;
 }
 
 /* MEDIA QUERIES FOR MOBILE DESIGN */
@@ -302,4 +302,73 @@ header {
 #gallery-line2 {
   height: 125px;
 }
+}
+
+/* HOW IT WORKS SECTION */
+#how-it-works {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+#how-it-works-content {
+  width: 55%;
+  margin: 50px auto auto auto;
+  display: flex;
+}
+
+#hiw-bulletpoins-container {
+  margin-left: 50px;
+}
+
+ol {
+  list-style: none;
+  counter-reset: item;
+  margin-top: 50px;
+}
+li {
+  counter-increment: item;
+  margin-bottom: 50px;
+}
+li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: #e67e22;
+  border-radius: 100%;
+  color: white;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+}
+
+.download-buttons {
+  display: flex;
+  margin-left: 30px;
+}
+
+
+/* MEDIA QUERIES FOR MOBILE DESIGN */
+@media screen and (max-width: 600px) {
+  #how-it-works-content {
+    width: 100%;
+    display: block;
+  }
+
+  #app-iPhone {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  ol {
+    line-height: normal;
+    margin-right: 10px;
+  }
+  .download-buttons {
+    display: block;
+  }
+
+  #hiw-bulletpoins-container {
+    margin-left: 0px;
+  }
 }
