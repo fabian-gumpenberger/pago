@@ -454,3 +454,55 @@ li:before {
     margin-top: 10px;
   }
 }
+
+/* CUSTOMER REVIEW SECTION */
+
+#customer-review {
+  background: url("http://localhost/pago/resources/img/back-customers_opacity.png") no-repeat;
+  height: auto;
+}
+
+#customer-reviews-container {
+  display: flex;
+  height: auto;
+  margin: 0px auto auto auto;
+  width: 60%;
+  padding-bottom: 50px;
+}
+
+#review1, #review2, #review3 {
+  width: 33.3%;
+  padding: 0 20px;
+}
+
+.user1, .user2, .user3 {
+  display: flex;
+}
+
+#customer {
+  border-radius: 45%;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+#customer-heading {
+  font-size: 80px;
+  margin-bottom: -60px;
+}
+
+/* MEDIA QUERIES FOR MOBILE DESIGN */
+@media screen and (max-width: 600px) {
+  #customer-reviews-container {
+    display: block;
+    width: 90%;
+    margin: 0px;
+  }
+
+  #review1, #review2, #review3 {
+    width: 100%;
+  }
+  #customer-heading {
+    margin-bottom: -50px;
+    font-size: 70px;
+  }
+}
