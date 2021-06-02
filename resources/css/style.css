@@ -8,6 +8,10 @@ email:     [etleva.kuci@xserv.ag]
 website:   [xserv.ag] 
 version history: [1.0] 
 */
+html, body {
+  margin: 0;
+  padding: 0;
+}  
 body { 
   font-size: 20px; 
   font-family: 'Lato', 'Arial', sans-serif;
@@ -29,7 +33,7 @@ h2 {
   font-weight: 100;
   font-family: 'Lato', 'Arial', sans-serif;
   text-align: center;
-  margin: 50px 0 0 0;
+  /*margin: 50px 0 0 0;*/
 }
 
 /* STYLE OF LINKS */
@@ -325,11 +329,11 @@ ol {
   counter-reset: item;
   margin-top: 50px;
 }
-li {
+#li-hiw {
   counter-increment: item;
   margin-bottom: 50px;
 }
-li:before {
+#li-hiw:before {
   margin-right: 10px;
   content: counter(item);
   background: #e67e22;
@@ -504,5 +508,78 @@ li:before {
   #customer-heading {
     margin-bottom: -50px;
     font-size: 70px;
+  }
+}
+
+/* SUBSCRIPTION SECTION */
+#subscription {
+  background-color: #f4f4f4;
+  height: auto;
+  display: flow-root;
+}
+
+#subscription-container {
+  display: flex;
+  height: auto;
+  margin: 50px auto auto auto;
+  width: 60%;
+  padding-bottom: 50px;
+}
+
+#subscription1, #subscription2, #subscription3 {
+  width: 33.3%;
+  padding: 0 20px;
+  background-color: white;
+  margin: 0 20px;
+  border-radius: 15px;
+}
+
+#sign-up {
+  display: flex;
+}
+
+.signup_btn {
+  background-color: #e67e22;
+  border: none;
+  border-radius:45px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#li-sub {
+  list-style: none;
+  margin-left: -30px;
+}
+
+#li-sub:before {
+  margin-right: 10px;
+  content: url("http://localhost/pago/resources/img/check.png");
+  width: 1.2em;
+  display: inline-block;
+  padding: 5px;
+}
+
+#price {
+  display: flex;
+}
+
+/* MEDIA QUERIES FOR MOBILE DESIGN */
+@media screen and (max-width: 600px) {
+  #subscription-container {
+    display: block;
+    width: 77%;
+    margin: 0px;
+  }
+
+  #subscription1, #subscription2, #subscription3 {
+    width: 100%;
+    padding-top: 20px;
   }
 }
