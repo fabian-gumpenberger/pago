@@ -372,3 +372,85 @@ li:before {
     margin-left: 0px;
   }
 }
+
+/* OUR CITIES SECTION */
+
+#our-cities {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#cities-container {
+  display: flex;
+  height: auto;
+  margin-top: 50px;
+}
+
+#city1, #city2, #city3, #city4 {
+  width: 25%;
+  padding: 0 20px;
+}
+
+.twitter {
+  color: #e67e22;
+}
+
+#happy-eaters {
+  padding-left: 45px;
+}
+
+#happy-eaters:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("http://localhost/pago/resources/img/happy-eaters.png") no-repeat;
+  position: absolute;
+  display: inline-block;
+  margin-left: -45px;
+ }
+
+ #top-chefs {
+  padding-left: 45px;
+}
+
+#top-chefs:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("http://localhost/pago/resources/img/top-chefs.png") no-repeat;
+  position: absolute;
+  display: inline-block;
+  margin-left: -45px;
+ }
+
+ .twitter {
+  padding-left: 45px;
+}
+
+.twitter:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("http://localhost/pago/resources/img/twitter.png") no-repeat;
+  position: absolute;
+  display: inline-block;
+  margin-left: -45px;
+ }
+
+/* MEDIA QUERIES FOR MOBILE DESIGN */
+@media screen and (max-width: 600px) {
+  #our-cities {
+    width: 90%;
+  }
+  #cities-container {
+    display: block;
+  }
+  #city1, #city2, #city3, #city4 {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  #happy-eaters:before {
+    margin-top: 10px;
+  }
+}
