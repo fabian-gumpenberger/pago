@@ -19,6 +19,11 @@ body {
   font-weight: 100;
 }
 
+a{
+  color: lightgray;
+  text-decoration: none;
+}
+
 /* STYLE OF THE HEADINGS */
 h1 { 
   font-size: 3em; 
@@ -68,6 +73,7 @@ header {
   margin: auto;
   /*position: fixed; nowrap;*/
 }
+
 
 .logo {
  display:inline-block;
@@ -280,6 +286,7 @@ header {
   }
   h2 {
     font-size: 25px;
+    margin: 30px auto;
   }
 }
 
@@ -320,6 +327,10 @@ header {
   display: flex;
 }
 
+#hiw-heading {
+  width: 100%;
+}
+
 #hiw-bulletpoins-container {
   margin-left: 50px;
 }
@@ -356,6 +367,10 @@ ol {
   #how-it-works-content {
     width: 100%;
     display: block;
+  }
+
+  #hiw-heading {
+    width: 90%;
   }
 
   #app-iPhone {
@@ -429,6 +444,7 @@ ol {
 
  .twitter {
   padding-left: 45px;
+  text-decoration: underline;
 }
 
 .twitter:before {
@@ -662,4 +678,56 @@ input[type=submit]:hover {
   #submit {
     margin-left: 0;
   }
+}
+
+/* FOOTER SECTION */
+footer {
+  height: auto;
+  background-color: #333333;
+}
+
+#footer-subpages {
+  width: 600px;
+}
+
+.footer-links {
+  margin-left: 20px;
+}
+
+#footer-row1 {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.social-media {
+  margin-right: 20px;
+}
+
+#footer-icons {
+  width: inherit;
+  float: right;
+  text-align: end;
+}
+
+#footer-row2 {
+  padding: 20px 0;
+}
+
+/* MEDIA QUERIES FOR MOBILE DESIGN */
+@media screen and (max-width: 600px) {
+  #footer-row1 {
+    display: block;
+  }
+  #footer-subpages {
+    width: auto;
+  }
+  #footer-icons {
+    width: auto;
+    margin-top: 20px;
+  }
+  #footer-row2 {
+    margin-top: 20px;
+}
 }
